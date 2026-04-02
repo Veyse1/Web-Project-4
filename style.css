@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 90px 20px;
+    font-family: "Manrope", sans-serif;
+    background: linear-gradient(135deg, #4f7df3 0%, #20b8b0 100%);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cards-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 285px;
+    min-height: 530px;
+    padding: 20px;
+    border-radius: 24px;
+    background-color: #ffffff;
+    box-shadow: 0 20px 45px rgba(16, 43, 110, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image-box {
+    height: 220px;
+    margin-bottom: 18px;
+    border-radius: 18px;
+    background: linear-gradient(180deg, #f7f9ff 0%, #eef3ff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-image {
+    height: 85%;
+    object-fit: contain;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-category {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #4b72f0;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.card-title {
+    margin-bottom: 14px;
+    color: #1f2a44;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.card-description {
+    color: #69748f;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.card-footer {
+    margin-top: 24px;
+    padding-top: 18px;
+    border-top: 1px solid #e7edf8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-price {
+    color: #18233f;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.card-price span {
+    color: #8b96af;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card-button {
+    padding: 11px 20px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #2a7cf7 0%, #17b6ae 100%);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px rgba(42, 124, 247, 0.24);
+}
+
+@media (max-width: 960px) {
+    body {
+        padding: 50px 16px;
+    }
+
+    .card {
+        min-height: auto;
+    }
+}
