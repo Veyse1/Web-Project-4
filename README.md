@@ -48,9 +48,6 @@ odev-4-Veyse1-main/
 
 ## Canlı Site Linki
 
-Bu bölüme proje yayınlandıktan sonra canlı site linki eklenebilir.
-
-Örnek:
 
 ```text
 https://veyse1.github.io/Web-Project-4/
